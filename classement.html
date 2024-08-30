@@ -139,7 +139,7 @@
         <li><a class="active" href="#classement">Classement</a></li>
       </ul>
     </div>
-    <img src="images/menu-btn.PNG" alt="menu" class="menu-bars">    
+    <img src="images/menu-btn.png" alt="menu" class="menu-bars">    
   </nav>
   <header></header>
   <h2></h2>				  
@@ -214,5 +214,13 @@
        document.getElementById("demo").innerHTML = table ;
      }
    </script>
+   <script>
+    const menuHamburger = document.querySelector(".menu-bars")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+  </script>
 </body>
 </html>
